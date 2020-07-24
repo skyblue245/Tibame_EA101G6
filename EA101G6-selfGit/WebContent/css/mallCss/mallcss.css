@@ -1,0 +1,240 @@
+#comm tbody tr:nth-child(even) {
+	background: #ffffff;
+}
+
+#comm tbody tr:nth-child(odd) {
+	background:#F0F0F0;
+}
+
+#comm {
+	font-family: "Helvetica", "Arial";
+	margin: auto;
+	/*內容不撐開表格*/
+	table-layout: fixed;
+	text-align: center;
+}
+
+#comm thead th {
+	background-color:#ffffff ;
+	height: 15px;
+	text-align: center;
+}
+
+#comm tbody td {
+	height: 80px;
+	vertical-align : middle ;
+}
+
+#comm td div {
+	/*多的隱藏然後.......*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+#comm img {
+	width:80%;
+	height:120%;
+}
+
+#commaction {
+	width: auto;
+	height: 40px;
+	margin: 5px auto;
+	text-align:center;
+}
+
+#commaction button {
+	width: 90px;
+	height: 40px;
+	border-radius: 8px;
+	background-color: #555555;
+	color: white;
+
+}
+
+
+.upda {
+	border-radius: 4px;
+	background-color: #e7e7e7;
+	color: #000000;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 476px){
+	.upda {
+	border-radius: 4px;
+	background-color: #e7e7e7;
+	color: #000000;
+	font-size: 2px;
+	width:140%;
+}
+	
+	
+}
+
+
+.upda:hover {
+	background-color: #E5446D;
+	color: white;
+}
+
+/* 以下為checkbox樣式 */
+.check-switch {
+	/* // 清除原有樣式 */
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	/* // 清除元素外邊款輪廓線 */
+	outline: none;
+	/* // 設置具備區塊元素屬性 */
+	display: inline-block;
+	/* // 按鈕設置爲手型 */
+	cursor: pointer;
+	/* // 設置寬度 */
+	width: 39px;
+	/* // 設置高度 */
+	height: 20px;
+	position: relative;
+	top: 10px;
+	/* // 邊框 */
+	border: 1px solid red;
+	/* // 背景 */
+	background-color: red;
+	/* // 設置陰影效果 */
+	box-shadow: red 0 0 0 0 inset;
+	/* // 圓角 */
+	border-radius: 20px;
+	/* // 設置背景的繪製區域 */
+	background-clip: content-box;
+}
+/* // 中間圓圈樣式 */
+.check-switch:before {
+	/* // content 屬性與 :before 及 :after 僞元素配合使用，來插入生成內容。 */
+	/* // 此元素值爲'' ,但是必須存在，否則將不顯示中間那個圓圈 */
+	content: '';
+	width: 17px;
+	height: 17px;
+	/* // 脫離文檔流 */
+	position: absolute;
+	/* // 設置位置 */
+	top: 0px;
+	left: 0;
+	/* // 圓角 */
+	border-radius: 20px;
+	/* // 顏色 */
+	background-color: #fff;
+	/* // 陰影效果 */
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+/* //checkbox元素被選中時的樣式 */
+.check-switch:checked {
+	/* // 邊框顏色 */
+	border-color: green;
+	/* // 選中後的陰影效果 */
+	box-shadow: green 0 0 0 16px inset;
+	/* // 選中後的北京色 */
+	background-color: green;
+}
+/* 在checkbox選中後，中間圓圈的便宜位置 */
+.check-switch:checked:before {
+	left: 21px;
+}
+/* 增加動畫效果 */
+.check-switch-anim {
+	transition: border cubic-bezier(0, 0, 0, 1) 0.4s, box-shadow
+		cubic-bezier(0, 0, 0, 1) 0.4s;
+}
+
+.check-switch-anim:before {
+	transition: left 0.3s;
+}
+
+.check-switch-anim:checked {
+	box-shadow: green 0 0 0 16px inset;
+	background-color: green;
+	transition: border ease 0.4s, box-shadow ease 0.4s, background-color
+		ease 1.2s;
+}
+
+.check-switch-anim:checked:before {
+	transition: left 0.3s;
+}
+
+
+
+div.box{
+	margin-right:20px;
+	display:inline-block;
+}
+
+div.intro{
+	position : absolute;
+	width : 400px;
+	top : 35%;
+	background-color : #ffffff;
+	word-break : break-all;
+	word-wrap : break-word;
+	margin-left : -200px;
+	font-size : 24px;
+	left : 50%;
+	color : #000000;
+	border-radius:15px;
+	padding:20px;
+	box-sizing:border-box;
+	border:solid 2px;
+}
+
+#comm td div{
+	cursor:pointer;
+}
+
+
+#addModal h2{
+	display:inline;
+}
+
+#addModal{
+	font-size:18px;
+	display:none;
+}
+
+.text {
+	margin-bottom: 12px;
+	width: 90%;
+	padding: .4em;
+	display: block;
+}
+
+.other {
+	margin-top: 5px;
+	display: block;
+}
+
+.player input, .age input {
+	margin-bottom: 12px;
+	width: 20%;
+	height:30px;
+}
+
+div#Model div.modal-footer{
+	text-align:center;
+	
+}
+
+ button.btn,input.btn {
+	border-radius: 4px;
+	background-color: #e7e7e7;
+	color: #000000;
+	font-size: 16px;
+	margin-right: 20px;
+	margin-left: 50px;
+	border:solid 1px;
+}
+
+div.modal-footer input.btn:hover{
+	background-color: #6c757d;
+	color: #ffffff;
+	border:solid 1px;
+}
+

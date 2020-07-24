@@ -1,0 +1,18 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+  <%if (rowsPerPage<rowNumber) {%>	
+    <%if(pageIndex>=rowsPerPage){%>
+       <div class="d-flex justify-content-start float-left">
+        <A href="<%=request.getRequestURI()%>?whichPage=1"><button class="btn btn-light">First</button></A>
+        <A href="<%=request.getRequestURI()%>?whichPage=<%=whichPage-1%>"><button class="btn btn-light">&laquo;</button></A>
+   		</div>
+    <%}%>
+  
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+    <div class="d-flex justify-content-end  float-left" style="margin-left:10px;">
+        <A href="<%=request.getRequestURI()%>?whichPage=<%=whichPage+1%>"><button class="btn btn-light">&raquo;</button></A>
+        <A href="<%=request.getRequestURI()%>?whichPage=<%=pageNumber%>"><button class="btn btn-light">Last</button></A>
+    </div>
+    <%}%>
+    
+  <%}%>  
+ 

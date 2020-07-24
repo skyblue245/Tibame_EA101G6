@@ -1,0 +1,77 @@
+	.icon{
+    width:20px;
+    height:20px;
+   }
+	
+	div.seldiv{
+		padding-top:10px;
+		text-align: center;
+		margin-top:20px; 
+	}
+	
+	div.seldiv form{
+ 		display:inline-block;
+ 		margin-left:20px;
+	}
+	
+	div.comm{
+		
+		height:300px;
+	}
+	
+	div.comm:hover{
+		background-color: beige; 
+	}
+	div.commMain{
+		margin-top: 10px;
+	}
+	
+	
+	div.comm p{
+		width: 100%;
+		font-size: 16px;
+		overflow : hidden;
+  		text-overflow : ellipsis;
+  		white-space : nowrap;
+		margin-top:10px;
+		margin-bottom: 0px;
+	}
+	div.comm a{
+		color: currentColor;
+	}
+	
+	.imgdiv img{
+		width: 100%;
+		height: 100%;
+		margin:0px auto;
+		border:solid #FF5809; 
+	}
+	
+	div.imgdiv{
+		margin:5px auto;
+		width: 80%;
+		height: 70%;
+	}
+	
+	div.row{
+		margin-top:10px;
+		text-align: center;
+	}
+	
+	div.dt p{
+		color:#D62672;
+		font-size:24px;
+		margin-top: 0px;
+	}
+	
+	a.shopcar{
+		position: fixed;
+		right:25px;
+		bottom: 25px;
+		
+	}
+	a.shopcar img{
+		width:60px;
+		height:60px;
+	}
+	

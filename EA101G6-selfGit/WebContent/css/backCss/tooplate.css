@@ -1,0 +1,583 @@
+/*
+
+Template 2108 Dashboard
+
+http://www.tooplate.com/view/2108-dashboard
+	
+
+COLOR CODES
+
+  Dark Gray: #656565
+  Light Gray: #E6E6E6
+  Blue: #0062BB
+  
+*/
+
+html {
+  font-size: 17px;
+}
+
+body.bg03 {
+  font-size: 17px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+  background-image: url(../../image/back/dash-bg-04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.bg02 {
+	background-image: url(../../image/back/dash-bg-04.jpg);
+}
+
+.bg03 {
+	background-image: url(../../image/back/dash-bg-04.jpg);
+}
+
+div.backNav a {
+  transition: all 0.3s ease;
+}
+div.backNav a:hover,
+div.backNav a:focus {
+  text-decoration: none;
+}
+
+div.backNav .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+div.backNav .tm-site-icon {
+  color: #656565;
+}
+
+div.backNav .tm-site-title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-left: 1rem;
+  color: #656565;
+  letter-spacing: 1px;
+}
+
+div.backNav .navbar {
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+}
+
+div.backNav .tm-logout-icon {
+  font-size: 1.5em;
+}
+
+div.backNav .tm-bg-black {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.backNav .tm-mt-big {
+  margin-top: 70px;
+}
+
+div.backNav .tm-mt-small {
+  margin-top: 20px;
+}
+
+div.backNav .tm-block {
+  padding: 50px 45px;
+}
+
+div.backNav .tm-block-title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+div.backNav .navbar-light .navbar-nav .nav-link {
+  color: #656565;
+}
+
+/* 7/4註解 */
+/* div.backNav .navbar-light .navbar-nav .nav-link, */
+/* .dropdown-item { */
+/*   padding: 15px 20px; */
+/* } */
+
+@media (min-width: 1200px)
+.navbar-expand-xl .navbar-nav .nav-link {
+    /* padding-right: .5rem; */
+    /* padding-left: .5rem; */
+}
+
+div.backNav .navbar-light .navbar-nav .active > .nav-link,
+div.backNav .navbar-light .navbar-nav .nav-link.active,
+div.backNav .navbar-light .navbar-nav .nav-link.show,
+div.backNav .navbar-light .navbar-nav .show > .nav-link,
+div.backNav .navbar-light .navbar-nav a:hover {
+  background-color: #e6e6e6;
+}
+/* 7/4註解 */
+/* div.backNav .nav-item { */
+/*   margin-right: 30px; */
+/* } */
+
+/* div.backNav .nav-item:last-child { */
+/*   margin-right: 0; */
+/* } */
+
+div.backNav .tm-content-row {
+  justify-content: space-between;
+  margin-left: -20px;
+  margin-right: -20px; To offset col padding
+}
+
+ div.backNav .tm-col {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+}
+
+div.backNav .tm-col-big {
+  width: 39%;
+}
+
+div.backNav .tm-col-small {
+  width: 21.95%;
+}
+
+div.backNav .tm-link-black {
+  color: black;
+}
+
+div.backNav .tm-link-black:hover,
+div.backNav .tm-link-black:focus {
+  color: #0266c4;
+}
+
+div.backNav ol {
+  margin-bottom: 0;
+}
+
+div.backNav .tm-list-group {
+  counter-reset: myOrderedListItemsCounter;
+  padding-left: 0;
+}
+
+div.backNav .tm-list-group > li {
+  list-style-type: none;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 8px;
+}
+
+div.backNav .tm-list-group-pad-big > li {
+  padding: 20px;
+}
+
+div.backNav .tm-list-group > li:hover {
+  color: #0266c4;
+}
+
+div.backNav .tm-list-group-alternate-color > li:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+div.backNav .tm-list-group > li:before {
+  counter-increment: myOrderedListItemsCounter;
+  content: counter(myOrderedListItemsCounter) ".";
+  margin-right: 0.5em;
+}
+
+div.backNav .tm-list {
+  padding-left: 30px;
+}
+
+div.backNav .tm-list > li {
+  margin-bottom: 20px;
+}
+
+div.backNav .form-control {
+  margin-bottom: 23px;
+  padding: 19px 18px;
+  border-radius: 0;
+  height: 50px;
+}
+
+div.backNav label {
+  margin-bottom: 18px;
+}
+
+div.backNav .btn {
+  border-radius: 0;
+  padding: 13px 28px;
+  transition: all 0.2s ease;
+  max-width: 100%;
+}
+
+div.backNav .btn-small {
+  padding: 10px 24px;
+}
+
+div.backNav .btn-primary {
+  background-color: transparent;
+  color: black;
+  border-color: #999999;
+}
+
+
+div.backNav #addEmp:hover,
+div.backNav #addEmp.dropdown-toggle,
+div.backNav .btn-primary:hover,
+div.backNav .btn-primary:active,
+div.backNav .btn-primary:not(:disabled):not(.disabled).active,
+div.backNav .btn-primary:not(:disabled):not(.disabled):active,
+div.backNav .show > .btn-primary.dropdown-toggle {
+  color: black;
+  background-color: #cdd4da;
+  border-color: #999999;
+}
+
+div.backNav .btn-danger {
+  color: #9f1321;
+  background-color: transparent;
+  border-color: #9f1321;
+}
+
+div.backNav .btn-danger:hover {
+  color: #9f1321;
+  background-color: rgba(159, 19, 32, 0.27);
+  border-color: #9f1321;
+}
+
+div.backNav .custom-file-input {
+  cursor: pointer;
+}
+
+div.backNav .custom-file-label {
+  border-radius: 0;
+}
+
+div.backNav .tm-btn-right {
+  text-align: right;
+}
+
+div.backNav .table td,
+div.backNav .table th {
+  padding: 20px 24px;
+}
+
+div.backNav .table-hover tbody tr:hover {
+  background-color: white;
+  color: #3aabd0;
+}
+
+div.backNav .tm-bg-gray {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+div.backNav .tm-table-striped-even.table-striped tbody tr:nth-of-type(even) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+div.backNav .tm-table-striped-even.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
+
+div.backNav .tm-table-mt {
+  margin-top: 66px;
+}
+
+div.backNav .page-item:first-child .page-link {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+div.backNav .page-item:last-child .page-link {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+div.backNav .page-link,
+div.backNav .tm-dots {
+  padding: 12px 18px;
+}
+
+div.backNav .page-link,
+div.backNav .page-link:hover {
+  color: black;
+}
+
+div.backNav .page-item {
+  margin-right: 18px;
+}
+
+div.backNav .page-item:last-child {
+  margin-right: 0;
+}
+
+div.backNav .page-item.active .page-link {
+  background-color: #e9ecef;
+  border-color: #dee2e6;
+  color: black;
+}
+
+div.backNav .tm-pagination {
+  justify-content: flex-end;
+}
+
+div.backNav .tm-pagination-label {
+  padding-bottom: 15px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+div.backNav .tm-table-actions-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.backNav .tm-table-actions-col-right {
+  text-align: right;
+}
+
+div.backNav input[type="checkbox"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid black;
+  box-sizing: border-box;
+  position: relative;
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  transition: all 0.1s linear;
+}
+div.backNav input[type="checkbox"]:checked {
+  background-color: #9f1321;
+}
+div.backNav input[type="checkbox"]:focus {
+  outline: 0 none;
+  box-shadow: none;
+}
+
+div.backNav .tm-trash-icon {
+  color: #6e6c6c;
+  cursor: pointer;
+}
+
+div.backNav .tm-trash-icon:hover {
+  color: #9f1321;
+}
+
+div.backNav .tm-trash-icon-cell {
+  width: 15px;
+}
+
+div.backNav footer {
+  margin-bottom: 35px;
+}
+
+div.backNav .custom-select {
+  height: 50px;
+  border-radius: 0;
+}
+
+div.backNav .tm-product-img-dummy {
+  max-width: 100%;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c8c8c8;
+}
+
+div.backNav .tm-login-col {
+  max-width: 600px;
+}
+
+.emp {/*���u�M�檺�e*/
+  width:100%;
+}
+
+.emptop{/*���u�M�檺�W�~�Z*/
+  margin-top:3%;
+}
+
+.emp_pic img{/*���u�Ӥ�*/
+  display:inline-block;
+  width:50px;
+  height:60px;
+}
+
+#addEmp{/*�s�W���u���s���H*/
+  background-color: white;
+  color: black;
+  border-color: #999999;
+  border-width:1px;
+  width:150px;
+  height:50px;
+  float:right;
+}
+
+
+
+/* .empbtn{�s�W���u���s��div */
+/*   text-align:center; */
+/*   margin-top:20px; */
+/* } */
+
+
+@media (min-width: 992px) {
+   .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.backNav.container {
+    max-width: 1630px;
+  }
+}
+
+@media (max-width: 1275px) and (min-width: 1200px) {
+  div.backNav .nav-item {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 1350px) and (min-width: 1200px) {
+  div.backNav .tm-table-actions-row {
+    display: block;
+  }
+  div.backNav .tm-table-actions-col-right {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 1350px) {
+  div.backNav .nav-item {
+    margin-right: 1px;
+  }
+}
+
+@media (max-width: 1199px) {
+  div.backNav .tm-col-big,
+  div.backNav .tm-col-small {
+    width: 49.65%;
+  }
+
+  div.backNav .navbar-collapse {
+    background: white;
+    padding: 15px;
+    box-shadow: rgba(108, 117, 125, 0.27) 0px 1px 1px 0px;
+    position: absolute;
+    top: 77px;
+    right: 20px;
+    width: 245px;
+    z-index: 1000;
+  }
+
+  div.backNav .navbar-nav .nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  div.backNav .nav-item {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  div.backNav .tm-col-big,
+  div.backNav .tm-col-small {
+    width: 100%;
+    min-height: 383px;
+    height: auto;
+  }
+  div.backNav .tm-block {
+    padding: 30px;
+  }
+
+  div.backNav .tm-table-actions-row {
+    display: block;
+  }
+
+  div.backNav .tm-table-actions-col-right {
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  div.backNav .tm-edit-product-row {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 633px) {
+  div.backNav .pagination {
+    flex-wrap: wrap;
+  }
+
+  div.backNav .tm-pagination {
+    justify-content: flex-start;
+  }
+
+  div.backNav .tm-pagination-label {
+    display: inline-block;
+    margin-right: 0;
+  }
+
+  div.backNav .page-item {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 574px) {
+  div.backNav .navbar-collapse {
+    top: 70px;
+  }
+
+  div.backNav .tm-btn-right {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  div.backNav .navbar {
+    margin-top: 30px;
+    height: auto;
+  }
+
+  body.bg03 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  div.backNav .tm-site-title {
+    font-size: 1.4rem;
+    margin-left: 7px;
+  }
+
+  div.backNav .tm-site-icon {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  div.backNav .tm-mt-big {
+    margin-top: 45px;
+  }
+}
+
+@media (max-width: 424px) {
+  div.backNav .navbar-collapse {
+    top: 107px;
+  }
+}
+
+

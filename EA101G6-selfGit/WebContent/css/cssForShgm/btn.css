@@ -1,0 +1,49 @@
+#showMsg, #myshgm, #seller, #findshgm, #prevPage, #firstPage, #nextPage,
+	#lastPage, #sendRp, #cancel, #buythis, #sold, #rp, #buythis,
+	#backToMain,#upshgm {
+	margin: 0 1%;
+	background-color: white;
+}
+
+#showMsg:hover, #myshgm:hover, #seller:hover, #findshgm:hover, #prevPage:hover,
+	#firstPage:hover, #nextPage:hover, #lastPage:hover, #sendRp:hover,
+	#cancel:hover, #buythis:hover, #sold:hover, #rp:hover, #buythis:hover,
+	#backToMain:hover,#upshgm:hover {
+	background-color: white;
+	color: #FF8C00;
+	box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.resetBtnCss {
+	margin: 0 1%;
+	background-color: white;
+}
+
+.resetBtnCss:hover {
+	background-color: white;
+	color: #FF8C00;
+	box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+}
+
+.slrbyr-css{
+	margin: 0 1%;
+	background-color: white;
+	margin:7% 0
+}
+.slrbyr-css:hover {
+	background-color: white;
+	color: #FF8C00;
+	box-shadow: 0 0 11px rgba(33, 33, 33, .2);
+	margin:7% 0
+}
+.breadcrumb {
+	margin-bottom: 0;
+}
+
+.modal-footer {
+	justify-content: center;
+}
+
+.slide {
+	min-height: 300px;
+}
